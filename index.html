@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+
+      <h1 style="color:#E8C5E5; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif;">Calculator</h1>
+
+      <div class="box">
+        <input type="text" readonly id="boxclear" />
+      </div>
+
+      <div class="button">
+        <button class="btn" onclick = "boxvalue = boxvalue + '1'  
+         document.querySelector('#boxclear').value = boxvalue;">1</button>
+        <button class="btn" onclick = "boxvalue = boxvalue + '2'  
+         document.querySelector('#boxclear').value = boxvalue;">2</button>
+         <button class="btn" onclick = "boxvalue = boxvalue + '3'  
+         document.querySelector('#boxclear').value = boxvalue;">3</button>
+         <button style="background-color: rgba(172, 255, 47, 0.603); color: black;"  class="btn" onclick = "boxvalue = boxvalue + '+'  
+         document.querySelector('#boxclear').value = boxvalue;">+</button>
+      </div>
+      <div class="button">
+        <button class="btn" onclick = "boxvalue = boxvalue + '4'  
+         document.querySelector('#boxclear').value = boxvalue;">4</button>
+        <button class="btn" onclick = "boxvalue = boxvalue + '5'  
+         document.querySelector('#boxclear').value = boxvalue;">5</button>
+         <button class="btn" onclick = "boxvalue = boxvalue + '6'  
+         document.querySelector('#boxclear').value = boxvalue;">6</button>
+         <button style="background-color: rgba(172, 255, 47, 0.603); color: black;" class="btn" onclick = "boxvalue = boxvalue + '-'  
+         document.querySelector('#boxclear').value = boxvalue;">-</button>
+      </div>
+      <div class="button">
+        <button class="btn" onclick = "boxvalue = boxvalue + '7'  
+         document.querySelector('#boxclear').value = boxvalue;">7</button>
+        <button class="btn" onclick = "boxvalue = boxvalue + '8'  
+         document.querySelector('#boxclear').value = boxvalue;">8</button>
+         <button class="btn" onclick = "boxvalue = boxvalue + '9'  
+         document.querySelector('#boxclear').value = boxvalue;">9</button>
+         <button style="background-color: rgba(172, 255, 47, 0.603); color: black;"class="btn" onclick = "boxvalue = boxvalue + '*'  
+         document.querySelector('#boxclear').value = boxvalue;">*</button>
+      </div>
+      <div class="button">
+        <button class="btn" onclick = "boxvalue = boxvalue + '.'  
+         document.querySelector('#boxclear').value = boxvalue;">.</button>
+        <button  style="margin-left: 10px;" class="btn" onclick = "boxvalue = boxvalue + '0'  
+         document.querySelector('#boxclear').value = boxvalue;">0</button>
+         <button style="margin-left: 10px;" class="btn" onclick = "boxvalue = boxvalue + '/'  
+         document.querySelector('#boxclear').value = boxvalue;">/</button>
+
+         <button style="background-color: rgba(241, 255, 47, 0.89); color: black;"
+          class="btn" onclick=" 
+          let res = eval(boxvalue); 
+          boxvalue = res;
+          document.querySelector('#boxclear').value = boxvalue;
+          ">=</button>
+
+      </div>
+      <div class="clear">
+        <button style="background-color: rgba(255, 68, 0, 0.856); color: aliceblue;
+         padding-left: 100px; padding-right: 100px; margin-bottom: 40px; margin-top: 20px;"
+         class="btn" onclick = "boxvalue =  ''  
+         document.querySelector('#boxclear').value = boxvalue;">CLEAR</button>
+      </div>
+      </div>
+    </div>
+    <script src="index.js">
+    </script>
+  </body>
+</html>
